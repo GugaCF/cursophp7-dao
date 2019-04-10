@@ -22,9 +22,26 @@ echo json_encode($lista);*/
 
 echo json_encode($search);*/
 
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 
 $usuario->login("root", "54321");
+
+echo $usuario;*/
+
+//$aluno = new Usuario("aluna", "@lun@");
+
+/*$aluno->setDeslogin("aluno");
+$aluno->setDessenha("@lun0");*/
+
+/*$aluno->insert();
+
+echo $aluno;*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(8);
+
+$usuario->update("professor", "fde555");
 
 echo $usuario;
 
