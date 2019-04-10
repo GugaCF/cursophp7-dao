@@ -37,12 +37,21 @@ $aluno->setDessenha("@lun0");*/
 
 echo $aluno;*/
 
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 
 $usuario->loadById(8);
 
 $usuario->update("professor", "fde555");
 
+echo $usuario;*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(10);
+
+$usuario->delete();
+
 echo $usuario;
+
 
  ?>
